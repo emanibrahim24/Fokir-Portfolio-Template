@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #FF305B;
+    --secondary-color:#f5f0f1;
+    
+}
+
+@font-face {
+    font-family: rbold;
+    src: url('../Roboto/static/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: rsemibold;
+    src: url('../Roboto/static/Roboto-SemiBold.ttf');
+}
+@font-face {
+    font-family: rregular;
+    src: url('../Roboto/static/Roboto-Regular.ttf');
+}
+
+.navbar-brand{
+   color: var( --main-color) ;
+    font-family: rbold,sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    
+    
+}
+.navbar-brand:hover{
+   color: var( --main-color) ;
+    
+}
+.navbar-nav .nav-link.active{
+   color: var( --main-color) ;
+ }
+.custom-item{
+
+    font-family: rregular,sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var( --secondary-color) ;
+    transition: all 0.8s 0.2s;
+
+}
+.custom-item:hover{
+   color: var( --main-color) ;
+
+}
+
+ #header{
+    background: linear-gradient(rgba(0, 0, 0, 0.676) 0% 100% ) , url(Imgs/Home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100dvh;
+}
+h3{
+    color: var( --secondary-color) ;
+    font-family: rsemibold,sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+h1{
+    color: var( --main-color) ;
+   font-family: rbold,"Source Sans Pro",sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+h4{
+    color: var( --secondary-color) ;
+    font-family: rregular,sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.typing {
+  position: relative;
+  color: var( --secondary-color) ;
+  width: auto;
+  min-width: 0;
+  margin-left: 7px;
+}
+
+.typing::after {
+  content: "Designer"; 
+  vertical-align: bottom;
+  color: var( --secondary-color) ;
+  border-right: 2px solid #ffffffd9;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 5s ease-in-out infinite, blink  infinite;
+}
+
+@keyframes typing {
+  0%   { content: "Designer"; width: 0; }
+  20%  { content: "Designer"; width: 8ch; }
+  40%  { content: "Designer"; width: 8ch; }
+  50%  { content: "Developer"; width: 0; }
+  70%  { content: "Developer"; width: 9ch; }
+  90%  { content: "Developer"; width: 9ch; }
+  100% { content: "Designer"; width: 0; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.about-content h2 span{
+    color: var(--main-color);
+}
+.about-content h2{
+    color: #333333;
+    font-family: rbold,sans-serif;
+    font-size: 34px;
+  font-weight: 600;
+
+
+}
+.about-content p{
+  color: #555555;
+  font-family: rregular,sans-serif;
+    font-size: 16px;
+  font-weight: 400;
+}
+.about-btn{
+background-color: var(--main-color);
+color: var(--secondary-color);
+transition: all 1s ;
+}
+.about-btn:hover{
+    background-color: RGB(236, 36, 3);
+    color:var(--secondary-color);
+}
+.about-content ul li{
+    color: #555555;
+}
+
+img{
+    overflow: hidden;
+}
+.layer{
+    
+    
+  transform: translateY(100%); 
+  transition: all 0.5s ease-in-out;
+}
+
+.position-relative:hover .layer {
+  transform: translateY(0);    
+}
+.about-icon{
+transition: all 0.5s;
+}
+.about-icon:hover{
+    color: var(--main-color);
+}
+.title-service{
+    color: #333333;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: rbold, sans-serif;
+}
+
+.services-icon{
+    color: var(--main-color);
+    font-size: 25px;
+    transition: all 0.5s ease;
+     
+}
+.services-card{
+    background-color: #F1F1F1;
+transition: all 0.6s;
+}
+.services-card:hover{
+  background-color: #fff; 
+}
+.services-card:hover .services-icon{
+scale: 1.3;
+}
+
+#services{
+    background-color: #F1F1F1;
+}
+.item-nav{
+color: #333333;
+}
+.item-nav:hover{
+color: #333333cb;
+}
+
+.hover-layer {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+button:hover .hover-layer {
+  opacity: 1;
+}
+
+
+.client-img {
+  transform: translateY(-10px); 
+  transform: translateX(-200px); 
+}
+.card-content{
+    transform: translateY(-100px); 
+}
+.card-btn{
+color: #333333;
+
+}
+.card-btn:hover{
+color: var(--main-color);
+    
+}
+
+
+.carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0b0b0b7b;
+  margin-top: 5px;
+}
+
+
+
+.footer-link{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.footer-link:hover{
+    text-decoration:underline;
+    color: var(--main-color);
+}
+footer{
+    height: 200px;
+}
